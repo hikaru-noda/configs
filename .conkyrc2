@@ -1,0 +1,44 @@
+background yes
+cpu_avg_samples 2
+
+override_utf8_locale yes
+use_xft yes
+#xftfont Monospace:size=8
+xftfont Bitstream Vera Sans Mono:size=9
+
+own_window no
+own_window_type desktop #panel override normal desktop dock
+own_window_transparent yes
+own_window_hints undecorated,sticky,skip_taskbar,skip_pager
+
+xftalpha 0.8
+
+out_to_console no
+
+wm_class_name Conky
+update_interval 10
+total_run_times 0
+
+double_buffer yes
+
+#minimum_size 450
+maximum_width 1646
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+stippled_borders 5
+border_width 1
+
+gap_x 4
+gap_y 4
+alignment top_left
+
+use_spacer right
+no_buffers yes
+uppercase no
+
+default_color 52524B
+
+TEXT
+${color}${tail /var/log/messages 30 }
