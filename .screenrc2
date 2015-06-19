@@ -1,0 +1,10 @@
+term screen-256color
+
+# Alt + arrows
+bindkey ^[[1;3D prev
+bindkey ^[[1;3C next
+
+screen -t "ncmpcpp" 0 ncmpcpp
+screen -t "mcabber" 1 mcabber
+screen -t "mutt" 2 mutt
+screen -t "rtorrent" 3 rtorrent

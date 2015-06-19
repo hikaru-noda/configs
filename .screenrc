@@ -1,0 +1,5 @@
+term screen-256color
+
+# Alt + arrows
+bindkey ^[[1;3D prev
+bindkey ^[[1;3C next
