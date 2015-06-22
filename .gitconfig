@@ -1,0 +1,12 @@
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad %Cgreen[%an]%Creset\t %Cblue%s %Cred%d%Creset\" --graph --date=short -n 30
+  amend = commit --all --amend --no-edit
+  type = cat-file -t
+  dump = cat-file -p
+[user]
+	name = Evgeniy Evtushenko
+	email = evgeniye@crytek.com
