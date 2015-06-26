@@ -12,3 +12,5 @@
 [user]
 	name = Evgeniy Evtushenko
 	email = evgeniye@crytek.com
+[push]
+	default = matching
