@@ -1,0 +1,20 @@
+source $HOME/.bash_profile
+PATH=$PATH:/opt/bin
+HISTFILE="$HOME/.config/shellrun/history"
+HISTCONTROL="ignoredups:ignorespace"
+
+# bind <TAB> to menu-complete. Makes <TAB> cycle through completions on
+# the current line instead of paging all possible completions
+bind '"\t": menu-complete'
+
+# bind <C-g> to send ^D 
+# (<C-g> is the default quit-chain-key in emacs, ratpoison, etc)
+bind '"\e[\e["':"\"\x04\""
+
+# set a simple prompt
+PS1="> "
+
+# ***DO NOT EDIT BEYOND THIS LINE***
+#
+# bind ENTER to add ' &' to command
+bind '"\x0d"':"\" &\n\""
