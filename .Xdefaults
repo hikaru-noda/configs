@@ -1,0 +1,48 @@
+! urxvt
+urxvt*background: Black
+urxvt*foreground: Green
+urxvt*scrollBar: off
+urxvt*saveLines: 1500
+urxvt*geometry: 80x24
+urxvt*termName: rxvt-256color
+urxvt*loginShell: true
+!urxvt*font: xft:Monospace:pixelsize=12
+urxvt*font: xft:Monospace:pixelsize=12:antialias=true:hinting=true
+urxvt*boldFont: xft:Monospace:pixelsize=12:Bold:antialias=true:hinting=true
+urxvt*letterSpace: -1
+urxvt*perl-ext-common: -option-popup,-selection-popup,-readline
+urxvt.print-pipe: "cat > /dev/null"
+
+! keys
+urxvt.keysym.M-Up:          \033[1;3A
+urxvt.keysym.M-Down:        \033[1;3B
+urxvt.keysym.M-Left:        \033[1;3D
+urxvt.keysym.M-Right:       \033[1;3C
+!urxvt.keysym.Shift-Up:		\033[a
+!urxvt.keysym.Shift-Down:	\033[b
+
+! colors
+! black
+urxvt*color0  : #2E3436
+urxvt*color8  : #555753
+! red
+urxvt*color1  : #CC0000
+urxvt*color9  : #EF2929
+! green
+urxvt*color2  : #4E9A06
+urxvt*color10 : #8AE234
+! yellow
+urxvt*color3  : #C4A000
+urxvt*color11 : #FCE94F
+! blue
+urxvt*color4  : #3465A4
+urxvt*color12 : #729FCF
+! magenta
+urxvt*color5  : #75507B
+urxvt*color13 : #AD7FA8
+! cyan
+urxvt*color6  : #06989A
+urxvt*color14 : #34E2E2
+! white
+urxvt*color7  : #D3D7CF
+urxvt*color15 : #EEEEEC
