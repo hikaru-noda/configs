@@ -4,9 +4,15 @@ export EDITOR="vim"
 
 [[ -f /usr/bin/grc ]] && {
   alias diff="grc --colour=auto diff"
+  alias dig="grc --colour=auto dig"
+  alias ifconfig="grc --colour=auto ifconfig"
   alias make="grc --colour=auto make"
+  alias mount="grc --colour=auto mount"
+  alias mtr="grc --colour=auto mtr"
   alias netstat="grc --colour=auto netstat"
+  alias nmap="grc --colour=auto nmap"
   alias ping="grc --colour=auto ping"
+  alias ps="grc --colour=auto ps"
   alias tail="grc --colour=auto tail"
   alias traceroute="grc --colour=auto traceroute"
 }
