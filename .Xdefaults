@@ -10,8 +10,9 @@ urxvt*loginShell: true
 urxvt*font: xft:Monospace:pixelsize=12:antialias=true:hinting=true
 urxvt*boldFont: xft:Monospace:pixelsize=12:Bold:antialias=true:hinting=true
 urxvt*letterSpace: -1
-urxvt*perl-ext-common: -option-popup,-selection-popup,-readline
+urxvt*perl-ext-common: -option-popup,-selection-popup,-readline,-tabbed,tabbedex,searchable-scrollback
 urxvt.print-pipe: "cat > /dev/null"
+URxvt.perl-lib: /home/zz/.config/urxvt/perl
 
 ! keys
 urxvt.keysym.M-Up:          \033[1;3A
@@ -21,7 +22,23 @@ urxvt.keysym.M-Right:       \033[1;3C
 !urxvt.keysym.Shift-Up:		\033[a
 !urxvt.keysym.Shift-Down:	\033[b
 
-! colors
+! tab settings colors and keys
+URxvt.tabbed.new-button: false
+URxvt.tabbed.autohide: true
+URxvt.tabbed.tabbar-fg: 2
+URxvt.tabbed.tabbar-bg: 0
+URxvt.tabbed.tab-fg: 3
+URxvt.tabbed.tab-bg: 0
+URxvt.keysym.Control-t: perl:tabbedex:new_tab
+URxvt.keysym.Control-Page_Up: perl:tabbedex:prev_tab
+URxvt.keysym.Control-Page_Down: perl:tabbedex:next_tab
+URxvt.keysym.Control-Shift-Page_Up: perl:tabbedex:move_tab_left
+URxvt.keysym.Control-Shift-Page_Down: perl:tabbedex:move_tab_right
+URxvt.keysym.Control-Shift-R: perl:tabbedex:rename_tab
+! reference:
+! https://wiki.archlinux.org/index.php/Rxvt-unicode#Advanced_tab_management
+
+!! colors
 ! black
 urxvt*color0  : #2E3436
 urxvt*color8  : #555753
