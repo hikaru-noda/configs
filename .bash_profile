@@ -17,6 +17,7 @@ export EDITOR="vim"
   alias traceroute="grc --colour=auto traceroute"
 }
 
+alias john="/usr/sbin/john"
 alias df="df -h"
 alias free="free -m"
 alias ll="ls -lh"
