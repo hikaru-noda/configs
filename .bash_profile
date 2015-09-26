@@ -18,6 +18,7 @@ export EDITOR="vim"
 }
 
 alias john="/usr/sbin/john"
+alias ssh_no_check="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
 alias df="df -h"
 alias free="free -m"
 alias ll="ls -lh"
