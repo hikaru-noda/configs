@@ -405,8 +405,11 @@ sub on_init {
       ($self->my_resource ('title') or 'true') !~ /^(?:false|0|no)/i;
    $self->{autohide} =
       ($self->my_resource ('autohide') or 'false') !~ /^(?:false|0|no)/i;
-   $self->{no_default_keys} =
-      ($self->my_resource ('no-tabbedex-keys') or 'false') !~ /^(?:false|0|no)/i;
+#   Disable tabbedex-keys (I don't want to use Ctrl+arrows for tab switching)
+#   Hardcoding it here because no-tabbedex-keys option in .Xdefaults doesn't work
+#   $self->{no_default_keys} =
+#      ($self->my_resource ('no-tabbedex-keys') or 'false') !~ /^(?:false|0|no)/i;
+    $self->{no_default_keys} = true;
     $self->{reopen_on_close} =
       ($self->my_resource ('reopen-on-close') or 'false') !~ /^(?:false|0|no)/i;
 
