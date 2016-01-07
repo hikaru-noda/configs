@@ -1,3 +1,7 @@
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
+
 export HISTCONTROL="ignoredups:ignorespace"
 export HISTIGNORE="pwd:free:top:htop:df:ps:uname:[bf]g:.:..:exit"
 export EDITOR="vim"
