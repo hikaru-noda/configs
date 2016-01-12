@@ -18,7 +18,8 @@ cpu_avg_samples 2
 update_interval 2
 total_run_times 0
 
-minimum_size 280
+minimum_size 290
+maximum_width 290
 draw_shades no
 draw_outline no
 draw_borders no
@@ -40,12 +41,15 @@ color2 70706a
 default_shade_color black
 default_outline_color white
 
+# Mcabber unreaded messages
+#${color}MSG  ${if_existing /home/zz/.mcabber/state}${color2}1${else}${color}0${endif}
+
 TEXT
-${color2}${cpugraph cpu1 28,138 2E2E28 2E2E28}${alignr}${color2}${cpugraph cpu2 28,138 2E2E28 2E2E28}
-${color2}${cpugraph cpu3 28,138 2E2E28 2E2E28}${alignr}${color2}${cpugraph cpu4 28,138 2E2E28 2E2E28}
-${color2}${cpugraph cpu5 28,138 2E2E28 2E2E28}${alignr}${color2}${cpugraph cpu6 28,138 2E2E28 2E2E28}
-${color1}${cpu cpu1}  ${cpu cpu2}  ${cpu cpu3}${alignr}${color0}${mem}${color}/${color0}${memmax}   ${color}HDD ${color0}${execi 30 nc localhost 7634 | awk -F\| '{print $4 "/" $9}'}  ${color}MAIL ${color2}${texeci 180 ~/bin/gmail} 
-${color1}${cpu cpu4}  ${cpu cpu5}  ${cpu cpu6}${alignr}${color0}${execi 4 expr `cat /sys/class/hwmon/hwmon1/device/temp1_input` / 2560 + 37} ${color}/${color0}${hwmon 0 temp 3}${color}/${color0}${hwmon 0 temp 2}${color}/${color0}${hwmon 0 temp 1}  ${color}GPU ${color0}${nvidia temp}${color}    ${color}MSG  ${if_existing /home/zz/.mcabber/state}${color2}1${else}${color}0${endif} 
-${color1}${time %H:%M}   ${color0}${uptime}   ${color}VM ${color0}${execi 60 LANG=en virsh -c qemu:///system list | grep -c "running"}${alignr}${color0}${upspeedf eth0}${color}/${color0}${downspeedf eth0} 
-${color}${upspeedgraph eth0 28,138 2E2E28 2E2E28}${alignr}${color}${downspeedgraph 28,138 2E2E28 2E2E28}
-${color1}${exec amixer -c 0 sget Master | awk 'NR==5{print $4}'}   ${color}VPN ${color0}${execi 60 sed -e '/^Common\ Name/,/^ROUTING\ TABLE$/!d; /^Common\ Name/d; /^ROUTING\ TABLE$/d' /var/log/vpn/openvpn-status.hive.log | wc -l}     ${color0}${execi 30 ~/bin/ups_status charge}${color}/${color0}${execi 30 ~/bin/ups_status load}       ${alignr}${color0}${totalup eth0}${color}/${color0}${totaldown eth0}  
+${color2}${cpugraph cpu1 28,144 2E2E28 2E2E28}${alignr}${color2}${cpugraph cpu2 28,144 2E2E28 2E2E28}
+${color2}${cpugraph cpu3 28,144 2E2E28 2E2E28}${alignr}${color2}${cpugraph cpu4 28,144 2E2E28 2E2E28}
+${color2}${cpugraph cpu5 28,144 2E2E28 2E2E28}${alignr}${color2}${cpugraph cpu6 28,144 2E2E28 2E2E28}
+${color1}${cpu cpu1}${goto 35}${cpu cpu2}${goto 65}${cpu cpu3}${alignr}${color0}${mem}${color}/${color0}${memmax}     ${color}HDD ${color0}${execi 30 nc localhost 7634 | awk -F\| '{print $4 "/" $9 "/" $14}'} 
+${color1}${cpu cpu4}${goto 35}${cpu cpu5}${goto 65}${cpu cpu6}${alignr}${color0}${execi 4 expr `cat /sys/class/hwmon/hwmon1/device/temp1_input` / 2560 + 37} ${color}/${color0}${hwmon 0 temp 3}${color}/${color0}${hwmon 0 temp 2}${color}/${color0}${hwmon 0 temp 1}     ${color}GPU ${color0}${nvidia temp}      
+${color1}${time %H:%M}          ${color0}${uptime}   ${alignr}${color0}${upspeedf eth0}${color}/${color0}${downspeedf eth0}
+${color}${upspeedgraph eth0 28,144 2E2E28 2E2E28}${alignr}${color}${downspeedgraph 28,144 2E2E28 2E2E28}
+${color1}${exec amixer -c 0 sget Master | awk 'NR==5{print $4}'}   ${color}VPN ${color0}${execi 60 sed -e '/^Common\ Name/,/^ROUTING\ TABLE$/!d; /^Common\ Name/d; /^ROUTING\ TABLE$/d' /var/log/vpn/openvpn-status.hive.log | wc -l}  ${color}VM ${color0}${execi 60 LANG=en virsh -c qemu:///system list | grep -c "running"}  ${color}P ${color0}${execi 30 ~/bin/ups_status charge}${color}/${color0}${execi 30 ~/bin/ups_status load}    ${alignr}${color0}${totalup eth0}${color}/${color0}${totaldown eth0} 
