@@ -388,12 +388,12 @@
     </keybind>
     <keybind key="XF86WWW">
       <action name="Execute">
-        <command>opera</command>
+        <command>opera-developer</command>
       </action>
     </keybind>
     <keybind key="W-o">
       <action name="Execute">
-        <command>opera</command>
+        <command>opera-developer</command>
       </action>
     </keybind>
     <keybind key="C-XF86WWW">
@@ -805,9 +805,6 @@
       <layer>below</layer>
 	  <skip_pager>yes</skip_pager>
       <skip_taskbar>yes</skip_taskbar>
-	</application>
-	<application name="opera">
-		<decor>no</decor>
 	</application>
     <!--
   # this is an example with comments through out. use these to make your
