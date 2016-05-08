@@ -366,14 +366,14 @@
         <command>mpc --quiet next</command>
       </action>
     </keybind>
-    <keybind key="XF86Forward">
-      <action name="Execute">
-        <command>~/bin/volume up</command>
-      </action>
-    </keybind>
-    <keybind key="XF86Back">
+    <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
         <command>~/bin/volume down</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>~/bin/volume up</command>
       </action>
     </keybind>
     <keybind key="W-F1">
@@ -409,6 +409,11 @@
     <keybind key="W-e">
       <action name="Execute">
         <command>pcmanfm</command>
+      </action>
+    </keybind>
+    <keybind key="XF86Standby">
+      <action name="Execute">
+		  <command>sudo /usr/local/bin/turn_monitor</command>
       </action>
     </keybind>
     <keybind key="C-F12">
