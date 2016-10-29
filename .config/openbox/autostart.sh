@@ -41,9 +41,12 @@ DESKTOP_ENV="OPENBOX"
 
 # keyboard layouts
 ~/bin/fixkbd &
+
 # GPU fan speed
 nvclock -fF 33 &
+
 # urxvt daemon
 urxvtd --opendisplay &
+
 # conky
 bin/start_conky &
