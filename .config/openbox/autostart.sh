@@ -43,7 +43,8 @@ DESKTOP_ENV="OPENBOX"
 ~/bin/fixkbd &
 
 # GPU fan speed
-nvclock -fF 33 &
+# nvclock is disabled because of segfolts
+#nvclock -fF 33 &
 
 # urxvt daemon
 urxvtd --opendisplay &
