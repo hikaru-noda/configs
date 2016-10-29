@@ -42,6 +42,10 @@ DESKTOP_ENV="OPENBOX"
 # keyboard layouts
 ~/bin/fixkbd &
 
+# mouse sensivity and accelleration
+# use "xset q" to get current settings
+xset mouse 1/1
+
 # GPU fan speed
 # nvclock is disabled because of segfolts
 #nvclock -fF 33 &
