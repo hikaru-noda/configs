@@ -150,10 +150,20 @@
 		<separator label="System"/>
 		<menu id="system-menu"/>
 		<separator/>
+		<item label="Switch User">
+			<action name="Execute">
+        <execute>
+          /usr/sbin/lxdm -c USER_SWITCH
+        </execute>
+				<prompt>
+					Are you sure you want to switch user?
+				</prompt>
+			</action>
+		</item>
 		<item label="Log Out">
 			<action name="Exit">
 				<prompt>
-					yes
+					Are you sure you want to log out?
 				</prompt>
 			</action>
 		</item>
