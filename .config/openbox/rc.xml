@@ -316,17 +316,7 @@
         <command>/usr/local/bin/volume mute</command>
       </action>
     </keybind>
-    <keybind key="W-m">
-      <action name="Execute">
-        <command>/usr/local/bin/volume mute</command>
-      </action>
-    </keybind>
     <keybind key="C-XF86AudioMute">
-      <action name="Execute">
-        <command>~/bin/alarm stop</command>
-      </action>
-    </keybind>
-    <keybind key="C-W-m">
       <action name="Execute">
         <command>~/bin/alarm stop</command>
       </action>
@@ -336,17 +326,7 @@
         <command>~/bin/player_control play</command>
       </action>
     </keybind>
-    <keybind key="W-p">
-      <action name="Execute">
-        <command>~/bin/player_control play</command>
-      </action>
-    </keybind>
     <keybind key="XF86AudioPrev">
-      <action name="Execute">
-        <command>mpc --quiet prev</command>
-      </action>
-    </keybind>
-    <keybind key="W-b">
       <action name="Execute">
         <command>mpc --quiet prev</command>
       </action>
@@ -361,27 +341,12 @@
         <command>mpc --quiet next</command>
       </action>
     </keybind>
-    <keybind key="W-f">
-      <action name="Execute">
-        <command>mpc --quiet next</command>
-      </action>
-    </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
         <command>/usr/local/bin/volume down</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
-      <action name="Execute">
-        <command>/usr/local/bin/volume up</command>
-      </action>
-    </keybind>
-    <keybind key="W-F1">
-      <action name="Execute">
-        <command>/usr/local/bin/volume down</command>
-      </action>
-    </keybind>
-    <keybind key="W-F2">
       <action name="Execute">
         <command>/usr/local/bin/volume up</command>
       </action>
