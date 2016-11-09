@@ -42,5 +42,8 @@ xset mouse 1/1
 # urxvt daemon
 urxvtd --opendisplay &
 
+# xscreensaver
+xscreensaver -no-splash
+
 # conky
 bin/start_conky &
