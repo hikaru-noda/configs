@@ -288,7 +288,7 @@
     </keybind>
     <keybind key="A-space">
       <action name="Execute">
-		<command>~/bin/bashrun</command>
+        <command>/usr/local/bin/bashrun</command>
       </action>
     </keybind>
     <keybind key="A-0x31">
@@ -313,12 +313,12 @@
     </keybind>
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>~/bin/volume mute</command>
+        <command>/usr/local/bin/volume mute</command>
       </action>
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>~/bin/volume mute</command>
+        <command>/usr/local/bin/volume mute</command>
       </action>
     </keybind>
     <keybind key="C-XF86AudioMute">
@@ -368,22 +368,22 @@
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>~/bin/volume down</command>
+        <command>/usr/local/bin/volume down</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>~/bin/volume up</command>
+        <command>/usr/local/bin/volume up</command>
       </action>
     </keybind>
     <keybind key="W-F1">
       <action name="Execute">
-        <command>~/bin/volume down</command>
+        <command>/usr/local/bin/volume down</command>
       </action>
     </keybind>
     <keybind key="W-F2">
       <action name="Execute">
-        <command>~/bin/volume up</command>
+        <command>/usr/local/bin/volume up</command>
       </action>
     </keybind>
     <keybind key="XF86WWW">
