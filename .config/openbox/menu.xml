@@ -25,30 +25,6 @@
 				</startupnotify>
 			</action>
 		</item>
-		<item label="Google Earth">
-			<action name="Execute">
-				<command>
-					googleearth
-				</command>
-				<startupnotify>
-					<enabled>
-						yes
-					</enabled>
-				</startupnotify>
-			</action>
-		</item>
-		<item label="Midori">
-			<action name="Execute">
-				<command>
-					midori
-				</command>
-				<startupnotify>
-					<enabled>
-						yes
-					</enabled>
-				</startupnotify>
-			</action>
-		</item>
 		<item label="Opera">
 			<action name="Execute">
 				<command>
@@ -63,42 +39,6 @@
 		</item>
 	</menu>
 	<menu id="multimedia-menu" label="Multimedia">
-		<item label="Avidemux">
-			<action name="Execute">
-				<command>
-					avidemux2_gtk
-				</command>
-				<startupnotify>
-					<enabled>
-						yes
-					</enabled>
-				</startupnotify>
-			</action>
-		</item>
-		<item label="Audacity">
-			<action name="Execute">
-				<command>
-					audacity
-				</command>
-				<startupnotify>
-					<enabled>
-						yes
-					</enabled>
-				</startupnotify>
-			</action>
-		</item>
-		<item label="Gimp">
-			<action name="Execute">
-				<command>
-					gimp
-				</command>
-				<startupnotify>
-					<enabled>
-						yes
-					</enabled>
-				</startupnotify>
-			</action>
-		</item>
 		<item label="VLC">
 			<action name="Execute">
 				<command>
