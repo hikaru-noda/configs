@@ -3,7 +3,7 @@ urxvt*background: Black
 urxvt*foreground: Green
 urxvt*scrollBar: off
 urxvt*saveLines: 1500
-urxvt*geometry: 80x24
+urxvt*geometry: 80x25
 urxvt*termName: rxvt-256color
 urxvt*loginShell: true
 !urxvt*font: xft:Monospace:pixelsize=12
