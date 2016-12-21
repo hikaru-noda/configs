@@ -29,7 +29,7 @@ DESKTOP_ENV="OPENBOX"
 #fi
 
 # keyboard layouts
-~/bin/fixkbd &
+~/bin/fixkbd
 
 # mouse sensivity and accelleration
 # use "xset q" to get current settings
@@ -40,7 +40,7 @@ xset mouse 1/1
 #nvclock -fF 33 &
 
 # urxvt daemon
-urxvtd --opendisplay &
+urxvtd --opendisplay
 
 # xscreensaver
 xscreensaver -no-splash &
