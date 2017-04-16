@@ -9,9 +9,6 @@
   dump = cat-file -p
 [core]
 	pager = cat
-[user]
-	name = Evgeniy Evtushenko
-	email = evgeniye@crytek.com
 [push]
 	default = matching
 [color]
