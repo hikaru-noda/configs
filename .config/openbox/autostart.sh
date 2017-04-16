@@ -40,7 +40,7 @@ xset mouse 1/1
 #nvclock -fF 33 &
 
 # urxvt daemon
-urxvtd --opendisplay
+urxvtd --opendisplay &
 
 # xscreensaver
 xscreensaver -no-splash &
