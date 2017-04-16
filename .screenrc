@@ -1,4 +1,5 @@
 term screen-256color
+defscrollback 10000
 
 # Alt + arrows
 bindkey ^[[1;3D prev
