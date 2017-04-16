@@ -48,7 +48,7 @@ TEXT
 ${color2}${cpugraph cpu1 28,144 2E2E28 2E2E28}${alignr}${color2}${cpugraph cpu2 28,144 2E2E28 2E2E28}
 ${color2}${cpugraph cpu3 28,144 2E2E28 2E2E28}${alignr}${color2}${cpugraph cpu4 28,144 2E2E28 2E2E28}
 ${color2}${cpugraph cpu5 28,144 2E2E28 2E2E28}${alignr}${color2}${cpugraph cpu6 28,144 2E2E28 2E2E28}
-${color1}${cpu cpu1}${goto 35}${cpu cpu2}${goto 65}${cpu cpu3}${alignr}${color0}${mem}${color}/${color0}${memmax}     ${color}HDD ${color0}${execi 30 nc localhost 7634 | awk -F\| '{print $4 "/" $9 "/" $14}'} 
+${color1}${cpu cpu1}${goto 35}${cpu cpu2}${goto 65}${cpu cpu3}${alignr}${color0}${mem}${color}/${color0}${memmax}     ${color}HDD ${color0}${execi 30 nc localhost 7634 2>/dev/null | awk -F\| '{print $4 "/" $9 "/" $14}'} 
 ${color1}${cpu cpu4}${goto 35}${cpu cpu5}${goto 65}${cpu cpu6}${alignr}${color0}${hwmon 0 temp 1 0.39 37}${color}/${color0}${hwmon 0 temp 3}${color}/${color0}${hwmon 0 temp 2}${color}/${color0}${hwmon 0 temp 1}                  
 ${color1}${time %H:%M}          ${color0}${uptime}   ${alignr}${color0}${upspeedf eth0}${color}/${color0}${downspeedf eth0}
 ${color}${upspeedgraph eth0 28,144 2E2E28 2E2E28}${alignr}${color}${downspeedgraph 28,144 2E2E28 2E2E28}
