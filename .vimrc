@@ -39,6 +39,9 @@ set nobackup
 " List of directory names for the swap file, separated with commas.
 set directory=~/.vim/swap
 
+" Background theme
+set background=dark
+
 "There is a special register for storing this selection, it is the "*
 "register.  Nothing is put in here unless the information about what text is
 "selected is about to change (e.g. with a left mouse click somewhere), or when
