@@ -18,3 +18,5 @@
   interactive = auto
   ui = auto
   pager = true
+[include]
+  path = .gitconfig-local
